@@ -99,7 +99,8 @@ function listen(port) {
     robots: argv.r || argv.robots,
     ext: argv.e || argv.ext,
     logFn: logger.request,
-    proxy: proxy
+    proxy: proxy,
+    absolutePath: argv.absolutepath
   };
 
   if (argv.cors) {
